@@ -1,0 +1,78 @@
+*, *::before, *::after {
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    background-color: #efbca2;
+}
+
+html {
+    line-height: 1.5;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    word-spacing: 0.05em;
+    margin-inline: auto;
+}
+
+.hero {
+    height:60vh;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url("../assets/img/imagemhome.jpg");
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+    color:white;
+}
+
+.topo {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+}
+
+.fino {
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+ul {
+    display: flex;
+    gap:30px;
+    list-style:none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+a:hover {
+    border-bottom: 2px solid white;
+}
+
+.texto-hero{
+    height:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.texto-hero h1{
+    font-size:3rem;
+}
+
+.texto-hero p{
+    font-size:1.3rem;
+}
