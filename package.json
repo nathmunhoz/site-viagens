@@ -1,0 +1,26 @@
+{
+  "name": "site-viagens",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server --port=8080",
+    "test:e2e": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathmunhoz/site-viagens.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathmunhoz/site-viagens/issues"
+  },
+  "homepage": "https://github.com/nathmunhoz/site-viagens#readme",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^15.14.2",
+    "live-server": "^1.2.2",
+    "wait-on": "^9.0.5"
+  }
+}
