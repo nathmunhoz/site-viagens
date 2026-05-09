@@ -1,0 +1,40 @@
+name: CI
+run-name: rodando workflow
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Clonar projeto
+        uses: actions/checkout@v4
+
+      - name: Instalar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Instalar live-server
+        run: npm install live-server --save-dev
+
+      - name: Instalar wait-on
+        run: npm install wait-on --save-dev
+
+      - name: Iniciar servidor
+        run: npx live-server --port=8080 &
+
+      - name: Esperar servidor iniciar
+        run: npx wait-on http://127.0.0.1:8080
+
+      - name: Rodar Cypress
+        run: npx cypress run
