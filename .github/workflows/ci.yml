@@ -1,5 +1,5 @@
 name: CI
-run-name: rodando workflow
+run-name: Pipeline de integração continua e analise de código
 
 on:
   pull_request:
@@ -7,34 +7,46 @@ on:
       - develop
 
 jobs:
-  test:
+  test-and-analyze:
 
     runs-on: ubuntu-latest
 
     steps:
 
-      - name: Clonar projeto
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Instalar Node
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Instalar dependências
+      - name: Install dependencies
         run: npm install
 
-      - name: Instalar live-server
+      - name: Install live-server
         run: npm install live-server --save-dev
 
-      - name: Iniciar servidor
+      - name: Start server
         run: npx live-server --port=8080 &
 
-      - name: Esperar servidor iniciar
+      - name: Wait server
         run: sleep 5
 
-      - name: Dar permissão ao Cypress
+      - name: Cypress permission
         run: chmod +x node_modules/.bin/cypress
 
-      - name: Rodar Cypress
+      - name: Run Cypress
         run: npx cypress run
+
+      - name: Sonar Scan
+        uses: SonarSource/sonarqube-scan-action@v5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        with:
+          args: >
+            -Dsonar.projectKey=site-faculdade
+            -Dsonar.projectName=site-faculdade
+            -Dsonar.projectVersion=1.0
+            -Dsonar.sources=.
