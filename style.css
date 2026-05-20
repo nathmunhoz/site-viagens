@@ -141,7 +141,7 @@ ul {
 }
 
 .email{
-    background-color:#efbca2;
+    background-color:#a5a5a5;
     padding:4rem 1.5rem;
     text-align:center;
 }
@@ -218,6 +218,6 @@ ul {
 .footer-copy{
     text-align:center;
     padding:1rem;
-    background:#1f2937;
+    background:#000000;
     font-size:.95rem;
 }
