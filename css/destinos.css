@@ -20,15 +20,24 @@ html {
 }
 
 .hero {
-    height:10vh;
-    background-image:
-        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-        url("../assets/img/imagemhome.jpg");
+    height:12vh;
+    background-color: black;
     background-size: cover;      
     background-position: center; 
     background-repeat: no-repeat;
     color:white;
 }
+
+.logo img{
+    width: 40px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+
+
 
 .topo {
     display: flex;
@@ -43,6 +52,17 @@ html {
 
 .bold {
     font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+a:hover {
+    border-bottom: 2px solid white;
 }
 
 /* MENU */
@@ -152,4 +172,43 @@ a:hover {
     object-fit: cover;
     border-radius: 12px;
     display: block;
+}
+
+.footer{
+    background:#111827;
+    color:white;
+    margin-top:0;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:2rem;
+    padding:2rem 3rem;
+}
+
+.footer-links,
+.footer-social{
+    display:flex;
+    gap:1.5rem;
+    flex-wrap:wrap;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer a:hover{
+    color:#efbca2;
+}
+
+.footer-copy{
+    text-align:center;
+    padding:1rem;
+    background:#000000;
+    font-size:.95rem;
 }
