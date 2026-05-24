@@ -39,12 +39,13 @@ jobs:
               uses: actions/setup-node@v4
               with:
                 node-version: 20
+                cache: 'npm'
 
             - name: Install Cypress
-              run: npm install --ignore-scripts
+              run: npm ci
 
             - name: Cypress permission
               run: chmod +x node_modules/.bin/cypress
 
             - name: Run E2E Tests
-              run: npx cypress run --config baseUrl=https://cd-viagens.azurewebsites.net --ignore-scripts
+              run: npx cypress run --config baseUrl=https://cd-viagens.azurewebsites.net
