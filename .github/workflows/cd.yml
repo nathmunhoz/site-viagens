@@ -26,14 +26,14 @@ jobs:
                 context: .
                 file: ./Dockerfile
                 push: True
-                tags: sonarqube:latest
+                tags: ${{ secrets.DOCKER_LOGIN }}/site-viagens:latest
 
             - name: Azure Deploy
               uses: Azure/webapps-deploy@v3.0.3
               with:
                 app-name: cd-viagens
                 publish-profile: ${{ secrets.PUBLISH_PROFILE }}
-                image: sonarqube:latest
+                image: ${{ secrets.DOCKER_LOGIN }}/site-viagens:latest
 
             - name: Setup Node
               uses: actions/setup-node@v4
