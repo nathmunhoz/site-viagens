@@ -16,6 +16,20 @@ html {
     margin-inline: auto;
 }
 
+.logo img{
+    width:55px;
+    height:55px;
+    object-fit:cover;
+    border-radius:50%;
+    mix-blend-mode: screen;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap:12px
+}
+
 .hero {
     height:60vh;
     background-image:
@@ -69,7 +83,8 @@ ul {
 }
 
 .texto-hero h1{
-    font-size:3rem;
+    font-size:4.2rem;
+    text-shadow:2px 2px 10px rgba(0,0,0,.35);
 }
 
 .texto-hero p{
@@ -77,7 +92,7 @@ ul {
 }
 
 .cards{
-    background-color:#efbca2;
+    background-color:#dfdfdf;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:2rem;
@@ -99,8 +114,8 @@ ul {
 }
 
 .tag {
-    background-color: rgb(46, 46, 139);
-    color: aliceblue;
+    background-color: #ffffff;
+    color: #595959;
     padding: 0.5rem;
     font-size: 1rem;
     font-weight: 600;
@@ -123,4 +138,86 @@ ul {
 .card-item p {
     font-size: 1rem;
     padding-top: 0.5rem;
+}
+
+.email{
+    background-color:#a5a5a5;
+    padding:4rem 1.5rem;
+    text-align:center;
+}
+
+.email h4{
+    font-size:1.8rem;
+    font-weight:700;
+    margin-bottom:1.5rem;
+}
+
+.linha{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    max-width:650px;
+    margin:0 auto;
+}
+
+.linha input{
+    flex:3;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    font-size:1rem;
+}
+
+.linha button{
+    flex:1;
+    border:none;
+    border-radius:8px;
+    background:#0d6efd;
+    color:white;
+    font-weight:600;
+    padding:14px;
+    transition:.3s;
+}
+
+.linha button:hover{
+    background:#0b5ed7;
+}
+
+.footer{
+    background:#111827;
+    color:white;
+    margin-top:0;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:2rem;
+    padding:2rem 3rem;
+}
+
+.footer-links,
+.footer-social{
+    display:flex;
+    gap:1.5rem;
+    flex-wrap:wrap;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer a:hover{
+    color:#efbca2;
+}
+
+.footer-copy{
+    text-align:center;
+    padding:1rem;
+    background:#000000;
+    font-size:.95rem;
 }

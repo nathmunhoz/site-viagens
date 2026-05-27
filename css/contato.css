@@ -18,15 +18,21 @@ html {
 }
 
 .hero {
-    width: 100%;
-    height: 35vh; 
-   background-image:
-        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-        url("../assets/img/imagemhome.jpg"); 
+    height:12vh;
+    background-color: black;
     background-size: cover;      
     background-position: center;  
     background-repeat: no-repeat;
     color: white;
+}
+
+.logo img{
+    width: 40px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap:10px
 }
 
 .topo {
@@ -61,118 +67,41 @@ a:hover {
     border-bottom: 2px solid white;
 }
 
-.head {
-    text-decoration: none;
-    color: white;
-    padding-bottom: 5px;
-    font-weight: 600;
+.footer{
+    background:#111827;
+    color:white;
+    margin-top:0;
 }
 
-.head:hover {
-    border-bottom: 2px solid white;
-}
-
-
-.texto-hero {
-    height:50%;
+.footer-container{
     display:flex;
-    flex-direction:column;
-    justify-content:flex-start;
+    justify-content:space-between;
     align-items:center;
+    flex-wrap:wrap;
+    gap:2rem;
+    padding:2rem 3rem;
+}
+
+.footer-links,
+.footer-social{
+    display:flex;
+    gap:1.5rem;
+    flex-wrap:wrap;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer a:hover{
+    color:#efbca2;
+}
+
+.footer-copy{
     text-align:center;
-  
-}
-
-.texto-hero h1 {
-    font-size:3rem;
-}
-
-.texto-hero h2 {
-     font-size:1.2rem;
-}
-
-
-.contato-hero {
-    text-align:center;
-    margin: 60px auto 40px;
-    max-width: 700px;
-  
-}
-
-.contato-hero h1 {
-   color:  #333;
-    font-size: 32px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.contato-hero h2 {
-    color:  rgb(46, 46, 139);
-    font-size:16px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 400;
-}
-
-
-.contato-hero p {
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #333;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-}
-
-.contato-form{
-    max-width: 600px;
-    margin: 0 auto 80px;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-}
-
-.contato-form form{
-    display: flex;
-    flex-direction: column;
-}
-
-.contato-form label{
-    margin-top: 15px;
-    font-weight: 600;
-}
-
-.contato-form input,
-.contato-form textarea{
-    margin-top: 5px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.contato-form button {
-    margin-top: 20px;
-    padding: 12px;
-    background-color: rgb(46, 46, 139);
-    border: none;
-    border-radius: 6px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contato-form button:hover {
-    background-color:rgb(46, 46, 139);
-    color:white
-}
-
-.rodape {
-    height: 17vh;
-    background-color: white;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding:1rem;
+    background:#000000;
+    font-size:.95rem;
 }
