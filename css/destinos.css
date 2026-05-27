@@ -20,7 +20,7 @@ html {
 }
 
 .hero {
-    height:10vh;
+    height:40vh;
     background-image:
         linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
         url("../assets/img/imagemhome.jpg");
@@ -64,22 +64,77 @@ a:hover {
 }
 
 /* GRID CARDS */
-.grid {
+.destinos-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
     padding: 40px;
-    margin-bottom: 40px;
 }
 
 .card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGEM */
+.card-image {
     position: relative;
 }
 
-.card img {
+.card-image img {
     width: 100%;
     height: 200px;
     object-fit: cover;
+}
+
+/* TAG (ex: Aventura) */
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ff6b00;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+/* CONTEÚDO */
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* BOTÃO */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 8px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background: #0056b3;
 }
 
 /* DETALHE DO DESTINO */
@@ -90,10 +145,9 @@ a:hover {
 
 /* TEXTO EM CIMA */
 .titulo {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
+    position: static;
     color: white;
+    padding: 20px;
 }
 
 .titulo h1 {
