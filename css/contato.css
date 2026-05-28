@@ -17,9 +17,27 @@ html {
     margin-inline: auto;
 }
 
+.logo img{
+    width:55px;
+    height:55px;
+    object-fit:cover;
+    border-radius:50%;
+    mix-blend-mode: screen;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap:12px
+}
+
+
 .hero {
-    height:12vh;
-    background-color: black;
+    width: 100%;
+    height: 35vh; 
+    background-image:
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url("../assets/img/imagemhome.jpg"); 
     background-size: cover;      
     background-position: center;  
     background-repeat: no-repeat;
@@ -100,6 +118,16 @@ a:hover {
 }
 
 .footer-copy{
+    text-align:center;
+  
+}
+
+.texto-hero {
+    height:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
     text-align:center;
   
 }
