@@ -6,11 +6,13 @@
     <title>Meus Destinos</title>
     <link rel="stylesheet" href="../css/destinos.css">
 </head>
+
 <body>
 
 <header class="hero">
     <section class="topo">
         <h1 class="bold">MEUS<span class="fino">DESTINOS</span></h1>
+
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -24,81 +26,115 @@
 
 <main>
 
+    <!-- FILTROS -->
+    <div class="filtros">
+        <button class="filtro ativo" data-filtro="todos">Todos</button>
+        <button class="filtro" data-filtro="praia">Praia</button>
+        <button class="filtro" data-filtro="aventura">Aventura</button>
+        <button class="filtro" data-filtro="romantico">Romântico</button>
+    </div>
+
+    <!-- GRID -->
     <section class="destinos-container">
 
-  <div class="card">
-    <div class="card-image">
-      <img src="../assets/img/costaamalfitana.png" alt="Costa Amalfitana">
-      <span class="tag">Aventura</span>
-    </div>
+        <!-- CARD 1 -->
+        <div class="card" data-categoria="aventura">
+            <div class="card-image">
+                <img src="../assets/img/costaamalfitana.png" alt="Costa Amalfitana">
+                <span class="tag">Aventura</span>
+            </div>
 
-    <div class="card-content">
-      <h3>Explorando a Costa Malfitana</h3>
-        <hr>
-      <p> Descubra as paisagens deslumbrantes do sul da Itália.</p>
-      <a href="#" class="btn">Ler mais</a>
-    </div>
-  </div>
+            <div class="card-content">
+                <h3>Explorando a Costa Amalfitana</h3>
+                <hr>
+                <p>Descubra as paisagens deslumbrantes do sul da Itália.</p>
+                <a href="#" class="btn">Ler mais</a>
+            </div>
+        </div>
 
-  <div class="card">
-    <div class="card-image">
-      <img src="../assets/img/paris.jpg">
-      <span class="tag">Romântico</span>
-    </div>
-    <div class="card-content">
-      <h3>Paris</h3>
-        <hr>
-      <p>Cidade do amor</p>
-      <a href="paginas-destino/paris.html" class="btn">Ler mais</a>
-    </div>
-  </div>
+        <!-- CARD 2 -->
+        <div class="card" data-categoria="romantico">
+            <div class="card-image">
+                <img src="../assets/img/paris.jpg" alt="Paris">
+                <span class="tag">Romântico</span>
+            </div>
 
-  <div class="card">
-    <div class="card-image">
-      <img src="../assets/img/noronha.jpg">
-      <span class="tag">Praia</span>
-    </div>
-    <div class="card-content">
-      <h3>Fernando de Noronha</h3>
-        <hr>
-      <p>Paraíso brasileiro</p>
-      <a href="#" class="btn">Ler mais</a>
-    </div>
-  </div>
+            <div class="card-content">
+                <h3>Paris</h3>
+                <hr>
+                <p>Cidade do amor</p>
+                <a href="paginas-destino/paris.html" class="btn">Ler mais</a>
+            </div>
+        </div>
 
-  <div class="card">
-    <div class="card-image">
-      <img src="../assets/img/noronha.jpg">
-      <span class="tag">Praia</span>
-    </div>
-    <div class="card-content">
-      <h3>Fernando de Noronha</h3>
-        <hr>
-      <p>Paraíso brasileiro</p>
-      <a href="#" class="btn">Ler mais</a>
-    </div>
-  </div>
+        <!-- CARD 3 -->
+        <div class="card" data-categoria="praia">
+            <div class="card-image">
+                <img src="../assets/img/noronha.jpg" alt="Noronha">
+                <span class="tag">Praia</span>
+            </div>
 
-  <div class="card">
-    <div class="card-image">
-      <img src="../assets/img/noronha.jpg">
-      <span class="tag">Praia</span>
-    </div>
-    <div class="card-content">
-      <h3>Fernando de Noronha</h3>
-        <hr>
-      <p>Paraíso brasileiro</p>
-      <a href="#" class="btn">Ler mais</a>
-    </div>
-  </div>
+            <div class="card-content">
+                <h3>Fernando de Noronha</h3>
+                <hr>
+                <p>Paraíso brasileiro</p>
+                <a href="#" class="btn">Ler mais</a>
+            </div>
+        </div>
 
-</section>
+        <!-- CARD 4 -->
+        <div class="card" data-categoria="praia">
+            <div class="card-image">
+                <img src="../assets/img/noronha.jpg" alt="Noronha">
+                <span class="tag">Praia</span>
+            </div>
+
+            <div class="card-content">
+                <h3>Fernando de Noronha</h3>
+                <hr>
+                <p>Paraíso brasileiro</p>
+                <a href="#" class="btn">Ler mais</a>
+            </div>
+        </div>
+
+    </section>
 
 </main>
 
 <footer>
     <p>&copy; 2026 MeusDestinos - Desenvolvido por Breno, Nathalia, Vanessa</p>
 </footer>
+
+<!-- FILTRO EM JAVASCRIPT -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const botoes = document.querySelectorAll(".filtro");
+    const cards = document.querySelectorAll(".card");
+
+    botoes.forEach(btn => {
+        btn.addEventListener("click", () => {
+
+            botoes.forEach(b => b.classList.remove("ativo"));
+            btn.classList.add("ativo");
+
+            const filtro = btn.getAttribute("data-filtro");
+
+            cards.forEach(card => {
+                const categoria = card.getAttribute("data-categoria");
+
+                if (filtro === "todos" || categoria === filtro) {
+                    card.classList.remove("hidden");
+                } else {
+                    card.classList.add("hidden");
+                }
+            });
+
+        });
+    });
+
+});
+</script>
 
 </body>
 </html>

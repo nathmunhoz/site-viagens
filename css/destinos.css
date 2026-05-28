@@ -1,209 +1,153 @@
-*,
-*::before,
-*::after {
+/* RESET */
+* {
 	margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: 'Source Sans Pro', Helvetica, sans-serif;
-    background-color: #ededed;
+	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+	background-color: #F5F5F5;
 }
 
-html {
-    line-height: 1.5;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    word-spacing: 0.05em;
-    margin-inline: auto;
-}
-
+/* HERO */
 .hero {
-    height:40vh;
-    background-image:
-        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-        url("../assets/img/imagemhome.jpg");
-    background-size: cover;      
-    background-position: center; 
-    background-repeat: no-repeat;
-    color:white;
+	height: 40vh;
+	background-image:
+		linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+		url("../assets/img/imagemhome.jpg");
+	background-size: cover;
+	background-position: center;
+	color: white;
 }
 
+/* TOPO */
 .topo {
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 50px;
-}
-
-.fino {
-    font-weight: 100;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 50px;
 }
 
 .bold {
-    font-weight: 800;
+	font-weight: 800;
+}
+
+.fino {
+	font-weight: 100;
 }
 
 /* MENU */
 ul {
-    display: flex;
-    gap:30px;
-    list-style:none;
+	display: flex;
+	gap: 30px;
+	list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding-bottom: 5px;
-    font-weight: 600;
+	color: white;
+	text-decoration: none;
 }
 
-a:hover {
-    border-bottom: 2px solid white;
+/* FILTROS */
+.filtros {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	margin: 20px 0;
+	flex-wrap: wrap;
 }
 
-/* GRID CARDS */
+.filtro {
+	padding: 8px 16px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	background: #eee;
+}
+
+.filtro.ativo {
+	background: #6C4AB6;
+	color: white;
+}
+
+/* GRID */
 .destinos-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    padding: 40px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 25px;
+	padding: 40px;
 }
 
+/* CARD */
 .card {
-    background: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    transition: 0.3s;
+	background: #fff;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+	transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+	transform: translateY(-5px);
+}
+
+.card.hidden {
+	display: none;
 }
 
 /* IMAGEM */
 .card-image {
-    position: relative;
+	position: relative;
 }
 
 .card-image img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
 }
 
-/* TAG (ex: Aventura) */
+/* TAG */
 .tag {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: #ff6b00;
-    color: white;
-    padding: 5px 10px;
-    font-size: 12px;
-    border-radius: 6px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: #FF8C42;
+	color: white;
+	padding: 5px 10px;
+	font-size: 12px;
+	border-radius: 6px;
 }
 
 /* CONTEÚDO */
 .card-content {
-    padding: 15px;
+	padding: 15px;
+    color: #484848;
 }
 
 .card-content h3 {
-    margin: 0;
-    font-size: 18px;
+	margin-bottom: 8px;
+}
+
+.card-content hr {
+	margin: 10px 0;
 }
 
 .card-content p {
-    font-size: 14px;
-    color: #555;
+    margin-top: 8px;
+	color: #555;
 }
 
 /* BOTÃO */
 .btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 6px 8px;
-    background: #007bff;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    border-radius: 8px;
+	display: inline-block;
+	margin-top: 12px;
+	padding: 6px 10px;
+	background: #6C4AB6;
+	color: white;
+	border-radius: 8px;
 }
 
 .btn:hover {
-    background: #0056b3;
-}
-
-/* DETALHE DO DESTINO */
-.destino-detalhe {
-    margin-top: 80px;
-}
-
-
-/* TEXTO EM CIMA */
-.titulo {
-    position: static;
-    color: white;
-    padding: 20px;
-}
-
-.titulo h1 {
-    margin: 0;
-    font-size: 42px;
-}
-
-/* TEXTO */
-.texto {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.texto h3 {
-    margin-top: 20px;
-}
-
-.texto ul {
-    display: block;
-    padding-left: 20px;
-    margin-top: 10px;
-}
-
-.texto li {
-    margin-bottom: 5px;
-}
-
-/* GALERIA DE IMAGENS DESTINO*/
-.galeria {
-    max-width: 900px;
-    margin: 20px auto 50px;
-    display: flex;
-    gap: 15px;
-}
-
-.galeria img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.banner {
-    position: relative;
-    margin: 80px auto !important;
-    max-width: 1100px;
-}
-
-.banner img {
-    width: 100%;
-    height: 550px !important;
-    object-fit: cover;
-    border-radius: 12px;
-    display: block;
+	background: #5A3FA3;
 }

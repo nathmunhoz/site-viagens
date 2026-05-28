@@ -1,39 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>Paris</title>
-<link rel="stylesheet" href="../../css/destinos.css"></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris - Meus Destinos</title>
+    <link rel="stylesheet" href="../../css/paginas-destinos.css">
+</head>
 <body>
 
-<header class="hero">
-    <h1 class="titulo">Paris</h1>
+<!-- HERO -->
+<header class="hero-destino hero-paris">
+    <div class="hero-overlay">
+        <h1 class="titulo-destino">Paris</h1>
+        <p class="subtitulo-destino">A Cidade Luz e o destino do amor</p>
+    </div>
 </header>
 
- <a href="../destinos.html" class="btn">← Voltar</a>
+<!-- VOLTAR -->
+<div class="container-voltar-destino">
+    <a href="../destinos.html" class="btn voltar">← Voltar para Destinos</a>
+</div>
 
-<main>
+<main class="conteudo-destino">
 
-<section class="texto">
-    <h2>Sobre o destino</h2>
-    <p>
-        Paris é conhecida como a cidade do amor, com arquitetura clássica,
-        cultura rica e pontos turísticos icônicos.
-    </p>
+    <!-- SOBRE -->
+    <section class="texto-destino">
+        <h2>Sobre o destino</h2>
+        <p>
+            Paris, a capital da França, é um centro mundial de arte, moda, gastronomia e cultura.
+            Cortada pelo Rio Sena, a cidade exala romantismo em cada esquina.
+        </p>
 
-    <h3>O que fazer:</h3>
-    <ul>
-        <li>Visitar a Torre Eiffel</li>
-        <li>Explorar o Louvre</li>
-        <li>Passear pelo Rio Sena</li>
-    </ul>
-</section>
+        <h3>Pontos Turísticos Imperdíveis:</h3>
+        <ul>
+            <li><strong>Torre Eiffel:</strong> Vista incrível da cidade.</li>
+            <li><strong>Museu do Louvre:</strong> Lar da Mona Lisa.</li>
+            <li><strong>Montmartre:</strong> Bairro artístico.</li>
+            <li><strong>Rio Sena:</strong> Passeio de barco.</li>
+            <li><strong>Parc des Princes:</strong> Estádio do PSG.</li>
+        </ul>
+    </section>
 
-<section class="galeria">
-    <img src="../../assets/img/paris.jpg">
-    <img src="../../assets/img/paris.jpg">
-    <img src="../../assets/img/paris.jpg">
-</section>
+    <!-- GUIA -->
+    <section class="informacoes-uteis-destino">
+        <h2>Guia Rápido</h2>
+        <div class="info-card-destino">
+            <p><strong>☀️ Melhor Época:</strong> Primavera ou Outono</p>
+            <p><strong>✈️ Como Chegar:</strong> CDG ou Orly</p>
+            <p><strong>🗣️ Idioma:</strong> Francês</p>
+            <p><strong>💶 Moeda:</strong> Euro (€)</p>
+        </div>
+    </section>
+
+    <!-- 💰 CUSTOS -->
+    <section class="custos-destino">
+        <h2>Custos Médios</h2>
+        <ul>
+            <li><strong>Hotel:</strong> €80 - €250 por noite</li>
+            <li><strong>Alimentação:</strong> €15 - €50 por refeição</li>
+            <li><strong>Transporte:</strong> €2 por viagem</li>
+        </ul>
+    </section>
+
+    <!-- 🗺️ MAPA -->
+    <section class="mapa-destino">
+        <h2>Localização</h2>
+        <iframe 
+            src="https://www.google.com/maps?q=Paris&output=embed">
+        </iframe>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="galeria-container-destino">
+        <h2>Galeria de Fotos</h2>
+        <div class="galeria-destino">
+            <img src="../../assets/img/paris2.jpg" alt="Paris">
+            <img src="../../assets/img/paris3.jpg" alt="Paris">
+            <img src="../../assets/img/paris4.jpg" alt="Paris">
+        </div>
+    </section>
 
 </main>
 

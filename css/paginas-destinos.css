@@ -1,0 +1,221 @@
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+	background-color: #F5F5F5;
+	color: #222;
+}
+
+/* HERO */
+.hero-destino {
+	height: 45vh;
+	background-image:
+		linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+		url("../assets/img/imagemhome.jpg");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: white;
+}
+
+/* IMAGENS POR DESTINO */
+.hero-paris {
+	background-image:
+		linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+		url("../assets/img/paris.jpg");
+}
+
+.hero-noronha {
+	background-image:
+		linear-gradient(rgba(108, 74, 182, 0.6), rgba(0,0,0,0.5)),
+		url("../assets/img/noronha.jpg");
+}
+
+.titulo-destino {
+	font-size: 48px;
+	font-weight: 700;
+}
+
+.subtitulo-destino {
+	font-size: 18px;
+	margin-top: 10px;
+	opacity: 0.9;
+}
+
+/* BOTÃO VOLTAR */
+.container-voltar-destino {
+	max-width: 900px;
+	margin: 20px auto;
+	padding: 0 20px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 8px 12px;
+	background: #6C4AB6;
+	color: white;
+	border-radius: 8px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.btn:hover {
+	background: #5A3FA3;
+}
+
+/* TEXTO */
+.texto-destino {
+	max-width: 900px;
+	margin: 30px auto;
+	padding: 25px;
+	background: white;
+	border-radius: 12px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.texto-destino h2 {
+	margin-bottom: 10px;
+	color: #6C4AB6;
+}
+
+.texto-destino h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.texto-destino p {
+	color: #444;
+	line-height: 1.6;
+	margin-bottom: 10px;
+}
+
+.texto-destino ul {
+	padding-left: 20px;
+	margin-top: 10px;
+}
+
+.texto-destino li {
+	margin-bottom: 6px;
+}
+
+/* GUIA RÁPIDO */
+.informacoes-uteis-destino {
+	max-width: 900px;
+	margin: 20px auto;
+	padding: 25px;
+	background: white;
+	border-radius: 12px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.informacoes-uteis-destino h2 {
+	color: #6C4AB6;
+	margin-bottom: 15px;
+}
+
+.info-card-destino {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 10px;
+}
+
+.info-card-destino p {
+	background: #F5F5F5;
+	padding: 12px;
+	border-radius: 8px;
+	font-size: 14px;
+}
+
+/* GALERIA */
+.galeria-container-destino {
+	max-width: 900px;
+	margin: 30px auto;
+	padding: 0 20px;
+}
+
+.galeria-container-destino h2 {
+	color: #6C4AB6;
+	margin-bottom: 15px;
+}
+
+.galeria-destino {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 15px;
+}
+
+.galeria-destino img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+.galeria-destino img:hover {
+	transform: scale(1.03);
+}
+
+/* DETALHE EXTRA (LINHA DIVISÓRIA BONITA) */
+hr {
+	border: none;
+	height: 2px;
+	background: #B9A7EA;
+	margin: 10px 0;
+}
+
+/* SEÇÕES GERAIS */
+section {
+	margin-bottom: 30px;
+}
+
+.custos-destino {
+	max-width: 900px;
+	margin: 30px auto;
+	padding: 25px;
+	background: white;
+	border-radius: 12px;
+}
+
+/* TÍTULO ROXO */
+.custos-destino h2 {
+	color: #6C4AB6;
+	margin-bottom: 10px;
+}
+
+/* LISTA */
+.custos-destino ul {
+	padding-left: 20px;
+	margin-top: 10px;
+}
+
+.custos-destino li {
+	margin-bottom: 6px;
+}
+
+/* MAPA */
+.mapa-destino {
+	max-width: 900px;
+	margin: 30px auto;
+	padding: 0 20px;
+}
+
+.mapa-destino h2 {
+    color: #6C4AB6;
+	margin-bottom: 10px;
+}
+
+.mapa-destino iframe {
+	width: 100%;
+	height: 300px;
+	border: none;
+	border-radius: 10px;
+}
