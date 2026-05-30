@@ -10,6 +10,15 @@ body {
 	background-color: #F5F5F5;
 }
 
+/* CONFIGURAÇÕES GERAIS */
+html {
+    line-height: 1.5;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    word-spacing: 0.05em;
+    margin-inline: auto;
+}
+
 /* HERO */
 .hero-destinos {
     height: 60vh;
@@ -23,6 +32,7 @@ body {
     color: white;
 }
 
+/* LOGO */
 .logo img {
     width: 40px;
     mix-blend-mode: screen;
@@ -34,13 +44,7 @@ body {
     gap: 10px;
 }
 
-.topo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-}
-
+/* TIPOGRAFIA */
 .bold {
     font-weight: 800;
 }
@@ -49,33 +53,12 @@ body {
     font-weight: 100;
 }
 
-.head {
-    text-decoration: none;
-    color: white;
-    padding-bottom: 5px;
-    font-weight: 600;
-}
-
-.head:hover {
-    border-bottom: 2px solid white;
-}
-
-.texto-hero {
-    height: 50%;
+/* TOPO / HEADER */
+.topo {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-}
-
-.texto-hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-.texto-hero p {
-    font-size: 1.2rem;
+    padding: 20px 50px;
 }
 
 /* MENU */
@@ -88,6 +71,30 @@ ul {
 a {
 	color: white;
 	text-decoration: none;
+	font-weight: 600;
+}
+
+.head:hover {
+	border-bottom: 2px solid white;
+}
+
+/* TEXTO HERO */
+.texto-hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 50%;
+}
+
+.texto-hero h1 {
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.texto-hero p {
+	font-size: 1.2rem;
 }
 
 /* FILTROS */
@@ -166,7 +173,7 @@ a {
 /* CONTEÚDO */
 .card-content {
 	padding: 15px;
-    color: #484848;
+	color: #484848;
 
 	display: flex;
 	flex-direction: column;
@@ -182,7 +189,7 @@ a {
 }
 
 .card-content p {
-    margin-top: 12px;
+	margin-top: 12px;
 	margin-bottom: 16px;
 	color: #555;
 	line-height: 1.6;
@@ -192,7 +199,6 @@ a {
 .btn {
 	display: inline-block;
 	margin-top: auto;
-	margin-top: 12px;
 	padding: 6px 10px;
 	background: #6C4AB6;
 	color: white;
@@ -202,4 +208,53 @@ a {
 
 .btn:hover {
 	background: #5A3FA3;
+}
+
+/* BANNER (da develop)*/
+.banner img {
+    width: 100%;
+    height: 550px !important;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+/* FOOTER (da develop) */
+.footer {
+    background:#111827;
+    color:white;
+    margin-top:0;
+}
+
+.footer-container {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:2rem;
+    padding:2rem 3rem;
+}
+
+.footer-links,
+.footer-social {
+    display:flex;
+    gap:1.5rem;
+    flex-wrap:wrap;
+}
+
+.footer a {
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer a:hover {
+    color:#efbca2;
+}
+
+.footer-copy {
+    text-align:center;
+    padding:1rem;
+    background:#000000;
+    font-size:.95rem;
 }

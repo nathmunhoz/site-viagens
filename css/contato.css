@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: 'Source Sans Pro', Helvetica, sans-serif;
-    background-color: #efbca2;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ededed;
 }
 
 html {
@@ -18,21 +18,23 @@ html {
 }
 
 .hero {
-    height:10vh;
-    background-image:
+   width: 100%;
+    height: 35vh; 
+   background-image:
         linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-        url("../assets/img/imagemhome.jpg");
+        url("../assets/img/imagemhome.jpg"); 
     background-size: cover;      
-    background-position: center; 
+    background-position: center;  
     background-repeat: no-repeat;
-    color:white;
+    color: white;
 }
+
 
 .topo {
     display: flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
 }
 
 .fino {
@@ -58,4 +60,181 @@ a {
 
 a:hover {
     border-bottom: 2px solid white;
+}
+
+
+.texto-hero {
+    height:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    text-align:center;
+  
+}
+
+.texto-hero h1 {
+    font-size:3rem;
+}
+
+.texto-hero h2 {
+     font-size:1.2rem;
+}
+
+
+.contato-hero {
+    text-align:center;
+    margin: 60px auto 40px;
+    max-width: 700px;
+  
+}
+
+.contato-hero h1 {
+   color:  #333;
+    font-size: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contato-hero h2 {
+    color:  rgb(46, 46, 139);
+    font-size:16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+}
+
+
+.contato-hero p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.contato-form{
+    max-width: 600px;
+    margin: 0 auto 80px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.contato-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-form label{
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.contato-form input,
+.contato-form textarea{
+    margin-top: 5px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contato-form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contato-form button:hover {
+      background-color: #0b5ed7;
+}
+
+.email{
+    background-color:#a5a5a5;
+    padding:4rem 1.5rem;
+    text-align:center;
+}
+
+.email h4{
+    font-size:1.8rem;
+    font-weight:700;
+    margin-bottom:1.5rem;
+}
+
+.linha{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    max-width:650px;
+    margin:0 auto;
+}
+
+.linha input{
+    flex:3;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    font-size:1rem;
+}
+
+.linha button{
+    flex:1;
+    border:none;
+    border-radius:8px;
+    background:#0d6efd;
+    color:white;
+    font-weight:600;
+    padding:14px;
+    transition:.3s;
+}
+
+.linha button:hover{
+    background:#0b5ed7;
+}
+
+.footer{
+    background:#111827;
+    color:white;
+    margin-top:0;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:2rem;
+    padding:2rem 3rem;
+}
+
+.footer-links,
+.footer-social{
+    display:flex;
+    gap:1.5rem;
+    flex-wrap:wrap;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer a:hover{
+    color:#efbca2;
+}
+
+.footer-copy{
+    text-align:center;
+    padding:1rem;
+    background:#000000;
+    font-size:.95rem;
 }
