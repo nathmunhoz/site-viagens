@@ -13,7 +13,6 @@ html {
     font-size: 16px;
     letter-spacing: 0.03em;
     word-spacing: 0.05em;
-    margin-inline: auto;
 }
 
 .logo img{
@@ -27,11 +26,11 @@ html {
 .logo{
     display: flex;
     align-items: center;
-    gap:12px
+    gap:12px;
 }
 
 .hero {
-    height:60vh;
+    height:75vh;
     background-image:
         linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
         url("assets/img/imagemhome.jpg");
@@ -39,6 +38,8 @@ html {
     background-position: center; 
     background-repeat: no-repeat;
     color:white;
+    display: flex;         
+    flex-direction: column;
 }
 
 .topo {
@@ -104,18 +105,21 @@ ul {
     border-radius:15px;
     overflow:hidden;
     box-shadow:0 10px 20px rgba(0,0,0,.12);
-    min-height:520px;
     position:relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-item img {
-    height: 45%;
+    height: 220px;
     width: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
 
 .tag {
     background-color: #ffffff;
-    color: #595959;
+    color: rgb(46, 46, 139);
     padding: 0.5rem;
     font-size: 1rem;
     font-weight: 600;
@@ -126,6 +130,9 @@ ul {
 
 .cards-texto {
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .card-item h5 {
@@ -138,10 +145,12 @@ ul {
 .card-item p {
     font-size: 1rem;
     padding-top: 0.5rem;
+    flex: 1;
 }
 
 .email{
-    background-color:#a5a5a5;
+    background-color: #1e3a5f;
+    color: white;
     padding:4rem 1.5rem;
     text-align:center;
 }
@@ -150,6 +159,7 @@ ul {
     font-size:1.8rem;
     font-weight:700;
     margin-bottom:1.5rem;
+    color: white;
 }
 
 .linha{
@@ -218,6 +228,6 @@ ul {
 .footer-copy{
     text-align:center;
     padding:1rem;
-    background:#000000;
+    background:#111827;
     font-size:.95rem;
 }
