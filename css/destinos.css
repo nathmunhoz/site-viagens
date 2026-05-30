@@ -6,35 +6,76 @@
 }
 
 body {
-	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+	font-family: 'Poppins', sans-serif;
 	background-color: #F5F5F5;
 }
 
 /* HERO */
-.hero {
-	height: 40vh;
-	background-image:
-		linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-		url("../assets/img/imagemhome.jpg");
-	background-size: cover;
-	background-position: center;
-	color: white;
+.hero-destinos {
+    height: 60vh;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url("../assets/img/banner.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 }
 
-/* TOPO */
+.logo img {
+    width: 40px;
+    mix-blend-mode: screen;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .topo {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
 }
 
 .bold {
-	font-weight: 800;
+    font-weight: 800;
 }
 
 .fino {
-	font-weight: 100;
+    font-weight: 100;
+}
+
+.head {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.head:hover {
+    border-bottom: 2px solid white;
+}
+
+.texto-hero {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.texto-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.texto-hero p {
+    font-size: 1.2rem;
 }
 
 /* MENU */
@@ -86,6 +127,9 @@ a {
 	overflow: hidden;
 	box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 	transition: 0.3s;
+
+	display: flex;
+	flex-direction: column;
 }
 
 .card:hover {
@@ -123,6 +167,10 @@ a {
 .card-content {
 	padding: 15px;
     color: #484848;
+
+	display: flex;
+	flex-direction: column;
+	flex: 1;
 }
 
 .card-content h3 {
@@ -134,18 +182,22 @@ a {
 }
 
 .card-content p {
-    margin-top: 8px;
+    margin-top: 12px;
+	margin-bottom: 16px;
 	color: #555;
+	line-height: 1.6;
 }
 
 /* BOTÃO */
 .btn {
 	display: inline-block;
+	margin-top: auto;
 	margin-top: 12px;
 	padding: 6px 10px;
 	background: #6C4AB6;
 	color: white;
 	border-radius: 8px;
+	width: fit-content;
 }
 
 .btn:hover {
