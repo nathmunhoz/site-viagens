@@ -18,31 +18,34 @@ html {
 }
 
 .hero {
-   width: 100%;
-    height: 35vh; 
-   background-image:
-        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-        url("../assets/img/imagemhome.jpg"); 
-    background-size: cover;      
-    background-position: center;  
-    background-repeat: no-repeat;
     color: white;
+	background-color: #111827;
 }
 
+.logo img {
+    width: 40px;
+    mix-blend-mode: screen;
+}
 
-.topo {
+.logo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    gap: 10px;
+}
+
+.bold {
+    font-weight: 800;
 }
 
 .fino {
     font-weight: 100;
 }
 
-.bold {
-    font-weight: 800;
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
 }
 
 ul {
@@ -235,6 +238,6 @@ a:hover {
 .footer-copy{
     text-align:center;
     padding:1rem;
-    background:#000000;
+    background:#111827;
     font-size:.95rem;
 }

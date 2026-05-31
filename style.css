@@ -15,31 +15,27 @@ html {
     word-spacing: 0.05em;
 }
 
-.logo img{
-    width:55px;
-    height:55px;
-    object-fit:cover;
-    border-radius:50%;
+.logo img {
+    width: 40px;
     mix-blend-mode: screen;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
-    gap:12px;
+    gap: 10px;
 }
 
 .hero {
-    height:75vh;
+    height: 60vh;
     background-image:
         linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-        url("assets/img/imagemhome.jpg");
-    background-size: cover;      
-    background-position: center; 
+        url("../assets/img/banner.jpeg");
+
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    color:white;
-    display: flex;         
-    flex-direction: column;
+    color: white;
 }
 
 .topo {
@@ -118,14 +114,14 @@ ul {
 }
 
 .tag {
-    background-color: #ffffff;
-    color: rgb(46, 46, 139);
-    padding: 0.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    position:absolute;
-    top:15px;
-    left:0;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: #FF8C42;
+	color: white;
+	padding: 5px 10px;
+	font-size: 12px;
+	border-radius: 6px;
 }
 
 .cards-texto {
