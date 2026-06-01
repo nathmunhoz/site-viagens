@@ -1,7 +1,7 @@
 describe('Página Home', () => {
 
   beforeEach(() => {
-    cy.visit('http://127.0.0.1:8080')
+    cy.visit('http://127.0.0.1:5500/index.html')
   })
 
   it('carrega a página inicial', () => {
@@ -55,7 +55,7 @@ describe('Página Home', () => {
 describe('Página Contato', () => {
   
   beforeEach(() => {
-    cy.visit('http://127.0.0.1:8080/pages/contato.html')
+    cy.visit('http://127.0.0.1:5500/paginas/contato.html')
   })
 
   it('exibe o menu de navegação', () => {
@@ -133,6 +133,43 @@ cy.get('footer')
   .should('exist')
 
 })
+
+})
+
+describe('Página Destinos', () => {
+
+  beforeEach(() => {
+    cy.visit('http://127.0.0.1:5500/paginas/destinos.html')
+  })
+
+  it('carrega a página', () => {
+    cy.contains('DESTINOS')
+  })
+
+  it('exibe os botões de filtro', () => {
+  cy.get('.filtro')
+    .should('have.length', 5)
+  })
+
+  it('mostra os cards', () => {
+    cy.get('.card').should('have.length', 12)
+  })
+
+  it('filtra por praia', () => {
+    cy.get('[data-filtro="praia"]').click()
+    cy.get('.card:not(.hidden)').should('exist')
+  })
+
+  it('volta para todos os destinos', () => {
+    cy.get('[data-filtro="praia"]').click()
+    cy.get('[data-filtro="todos"]').click()
+    cy.get('.card:not(.hidden)').should('have.length', 12)
+  })
+
+  it('clicar em ler mais leva para outra página', () => {
+    cy.get('.card .btn').first().click()
+    cy.url().should('include', 'paginas-destino')
+  })
 
 })
 
