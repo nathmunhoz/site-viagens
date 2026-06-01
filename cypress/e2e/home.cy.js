@@ -136,7 +136,64 @@ cy.get('footer')
 
 })
 
+describe('Página Sobre', () => {
 
+  beforeEach(() => {
+    cy.visit('http://127.0.0.1:8080/pages/sobre.html')
+  })
 
+  it('exibe o menu de navegação', () => {
+
+    cy.get('nav')
+      .should('exist')
+
+  })
+
+  it('possui 4 links no menu', () => {
+
+    cy.get('nav ul li')
+      .should('have.length', 4)
+
+  })
+
+  it('exibe os títulos da página', () => {
+
+    cy.contains('Sobre o site')
+    cy.contains('Quem somos?')
+
+  })
+
+  it('exibe a imagem', () => {
+
+    cy.get('.imagem-sobre img')
+      .should('exist')
+
+  })
+
+  it('exibe o campo de email e o botão', () => {
+
+    cy.get('input[type="email"]')
+      .should('exist')
+
+    cy.contains('Assinar')
+
+  })
+
+  it('permite preencher o campo de email', () => {
+
+    cy.get('input[type="email"]')
+      .type('ana@email.com')
+      .should('have.value', 'ana@email.com')
+
+  })
+
+  it('exibe o footer', () => {
+
+    cy.get('footer')
+      .should('exist')
+
+  })
+
+})
 
 
