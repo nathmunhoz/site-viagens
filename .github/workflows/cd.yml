@@ -49,11 +49,12 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: Aguardar site estar disponível
-        run: npx wait-on https://cd-viagens.azurewebsites.net --timeout 120000
-
       - name: Run Cypress E2E Tests
         uses: cypress-io/github-action@v6
         with:
           install: true
+          wait-on: 'https://cd-viagens.azurewebsites.net'
+          wait-on-timeout: 120
           config: baseUrl=https://cd-viagens.azurewebsites.net
+        env:
+          CYPRESS_BASE_URL: https://cd-viagens.azurewebsites.net
