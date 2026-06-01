@@ -1,7 +1,7 @@
 describe('Página Home', () => {
 
   beforeEach(() => {
-    cy.visit('http://127.0.0.1:8080/index.html')
+    cy.visit('/')
   })
 
   it('carrega a página inicial', () => {
@@ -55,7 +55,7 @@ describe('Página Home', () => {
 describe('Página Contato', () => {
   
   beforeEach(() => {
-    cy.visit('http://127.0.0.1:8080/paginas/contato.html')
+    cy.visit('/paginas/contato.html')
   })
 
   it('exibe o menu de navegação', () => {
@@ -139,7 +139,7 @@ cy.get('footer')
 describe('Página Destinos', () => {
 
   beforeEach(() => {
-    cy.visit('http://127.0.0.1:8080/paginas/destinos.html')
+    cy.visit('/paginas/destinos.html')
   })
 
   it('carrega a página', () => {
@@ -176,7 +176,7 @@ describe('Página Destinos', () => {
 describe('Página Sobre', () => {
 
   beforeEach(() => {
-    cy.visit('http://127.0.0.1:8080/paginas/sobre.html')
+    cy.visit('/paginas/sobre.html')
   })
 
   it('exibe o menu de navegação', () => {
