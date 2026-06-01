@@ -1,7 +1,7 @@
 describe('Página Home', () => {
 
   beforeEach(() => {
-    cy.visit('http://127.0.0.1:5500/index.html')
+    cy.visit('http://127.0.0.1:8080/index.html')
   })
 
   it('carrega a página inicial', () => {
@@ -55,7 +55,7 @@ describe('Página Home', () => {
 describe('Página Contato', () => {
   
   beforeEach(() => {
-    cy.visit('http://127.0.0.1:5500/paginas/contato.html')
+    cy.visit('http://127.0.0.1:8080/paginas/contato.html')
   })
 
   it('exibe o menu de navegação', () => {
@@ -139,7 +139,7 @@ cy.get('footer')
 describe('Página Destinos', () => {
 
   beforeEach(() => {
-    cy.visit('http://127.0.0.1:5500/paginas/destinos.html')
+    cy.visit('http://127.0.0.1:8080/paginas/destinos.html')
   })
 
   it('carrega a página', () => {
@@ -173,7 +173,63 @@ describe('Página Destinos', () => {
 
 })
 
+describe('Página Sobre', () => {
 
+  beforeEach(() => {
+    cy.visit('http://127.0.0.1:8080/paginas/sobre.html')
+  })
 
+  it('exibe o menu de navegação', () => {
 
+    cy.get('nav')
+      .should('exist')
+
+  })
+
+  it('possui 4 links no menu', () => {
+
+    cy.get('nav ul li')
+      .should('have.length', 4)
+
+  })
+
+  it('exibe os títulos da página', () => {
+
+    cy.contains('Sobre o site')
+    cy.contains('Quem somos?')
+
+  })
+
+  it('exibe a imagem', () => {
+
+    cy.get('.imagem-sobre img')
+      .should('exist')
+
+  })
+
+  it('exibe o campo de email e o botão', () => {
+
+    cy.get('input[type="email"]')
+      .should('exist')
+
+    cy.contains('Assinar')
+
+  })
+
+  it('permite preencher o campo de email', () => {
+
+    cy.get('input[type="email"]')
+      .type('ana@email.com')
+      .should('have.value', 'ana@email.com')
+
+  })
+
+  it('exibe o footer', () => {
+
+    cy.get('footer')
+      .should('exist')
+
+  })
+
+})
 
