@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Destinos</title>
+    <link rel="stylesheet" href="../css/destinos.css">
+</head>
+
+<body>
+<header class="hero-destinos">
+    <section class="topo">
+        <div class="logo">
+            <img src="../assets/img/logoimg.jpg" alt="Logo">
+            <span><h1 class="bold">MEUS<span class="fino">DESTINOS</span></h1></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="head" href="../index.html">Home</a></li>
+                <li><a class="head" href="destinos.html">Destinos</a></li>
+                <li><a class="head" href="sobre.html">Sobre</a></li>
+                <li><a class="head" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </section>
+
+</header>
+
+<main>
+
+    <!-- FILTROS -->
+    <div class="filtros">
+        <button class="filtro ativo" data-filtro="todos">Todos</button>
+        <button class="filtro" data-filtro="praia">Praia</button>
+        <button class="filtro" data-filtro="aventura">Aventura</button>
+        <button class="filtro" data-filtro="romantico">Romântico</button>
+        <button class="filtro" data-filtro="cultura">Cultura</button>
+    </div>
+
+    <!-- GRID -->
+    <section class="destinos-container">
+
+        <!-- CARD 1 -->
+        <div class="card" data-categoria="praia">
+            <div class="card-image">
+                <img src="../assets/img/costaamalfitana.png" alt="Costa Amalfitana">
+                <span class="tag">Praia</span>
+            </div>
+
+            <div class="card-content">
+                <h3>Costa Amalfitana</h3>
+                <hr>
+                <p>Descubra as paisagens deslumbrantes do sul da Itália.</p>
+                <a href="paginas-destino/amalfitana.html" class="btn">Ler mais</a>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card" data-categoria="romantico">
+            <div class="card-image">
+                <img src="../assets/img/paris.jpg" alt="Paris">
+                <span class="tag">Romântico</span>
+            </div>
+
+            <div class="card-content">
+                <h3>Explorando Paris</h3>
+                <hr>
+                <p>Conheça a cidade do amor, seus monumentos e sua rica cultura.</p>
+                <a href="paginas-destino/paris.html" class="btn">Ler mais</a>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card" data-categoria="praia">
+            <div class="card-image">
+                <img src="../assets/img/noronha.jpg" alt="Noronha">
+                <span class="tag">Praia</span>
+            </div>
+
+            <div class="card-content">
+                <h3>Explorando Fernando de Noronha</h3>
+                <hr>
+                <p>Explore praias paradisíacas e águas cristalinas no Brasil.</p>
+                <a href="paginas-destino/noronha.html" class="btn">Ler mais</a>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card" data-categoria="aventura">
+            <div class="card-image">
+                <img src="../assets/img/grecia-santorini-praia-1-jpg.webp" alt="Ilhas Gregas">
+                <span class="tag">Aventura</span>
+            </div>
+
+            <div class="card-content">
+                <h3>Explorando as Ilhas Gregas</h3>
+                <hr>
+                <p>Um guia pelas belezas das ilhas de Santorini e Mykonos.</p>
+                <a href="paginas-destino/ilhas-gregas.html" class="btn">Ler mais</a>
+            </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="card" data-categoria="cultura">
+            <div class="card-image">
+                <img src="../assets/img/638814864529335322_cultura-japonesa.jpg" alt="Cultura Japao">
+                <span class="tag">Cultura</span>
+            </div>
+
+            <div class="card-content">
+                <h3>Descubra o Japão Tradicional</h3>
+                <hr>
+                <p>Conheça os templos, jardins e a cultura única do Japão.</p>
+                <a href="paginas-destino/japao.html" class="btn">Ler mais</a>
+            </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="card" data-categoria="aventura">
+            <div class="card-image">
+                <img src="../assets/img/africa.jpg" alt="África do Sul">
+                <span class="tag">Aventura</span>
+            </div>
+
+            <div class="card-content">
+                <h3>Explore a África do Sul</h3>
+                <hr>
+                <p>Viva a emoção dos safáris, descubra paisagens incríveis e aventure-se pela natureza africana.</p>
+                <a href="paginas-destino/africa.html" class="btn">Ler mais</a>
+            </div>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="card" data-categoria="cultura">
+            <div class="card-image">
+                <img src="../assets/img/sydney.webp" alt="Sydney">
+                <span class="tag">Cultura</span>
+            </div>
+
+            <div class="card-content">
+                <h3>Conheça Sydney na Austrália</h3>
+                <hr>
+                <p>Descubra a famosa Opera House, belas praias e a cultura vibrante da maior cidade australiana.</p>
+                <a href="paginas-destino/sydney.html" class="btn">Ler mais</a>
+            </div>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="card" data-categoria="aventura">
+            <div class="card-image">
+                <img src="../assets/img/machu-picchu.jpeg" alt="Peru">
+                <span class="tag">Aventura</span>
+            </div>
+
+            <div class="card-content">
+                <h3>Explore Machu Picchu e Cusco</h3>
+                <hr>
+                <p>Viva uma aventura inesquecível pelas montanhas andinas e descubra a história do Império Inca.</p>
+                <a href="paginas-destino/machu-picchu.html" class="btn">Ler mais</a>
+            </div>
+        </div>
+
+        <!-- CARD 9 -->
+        <div class="card" data-categoria="romantico">
+            <div class="card-image">
+                <img src="../assets/img/veneza.jpg" alt="Veneza">
+                <span class="tag">Romântico</span>
+            </div>
+
+            <div class="card-content">
+                <h3>Explore Veneza</h3>
+                <hr>
+                <p>Encante-se com os canais, gôndolas e paisagens que fazem de Veneza um dos destinos mais românticos do mundo.</p>
+                <a href="paginas-destino/veneza.html" class="btn">Ler mais</a>
+            </div>
+        </div>
+
+        <!-- CARD 10 -->
+        <div class="card" data-categoria="cultura">
+            <div class="card-image">
+                <img src="../assets/img/salvador.jpg" alt="Salvador">
+                <span class="tag">Cultura</span>
+            </div>
+
+            <div class="card-content">
+                <h3>Explore Salvador</h3>
+                <hr>
+                <p>Conheça o Pelourinho, a culinária baiana e as tradições que marcam a história do Brasil.</p>
+                <a href="paginas-destino/salvador.html" class="btn">Ler mais</a>
+            </div>
+        </div>
+
+        <!-- CARD 11 -->
+        <div class="card" data-categoria="cultura">
+            <div class="card-image">
+                <img src="../assets/img/nova york.webp" alt="Nova York">
+                <span class="tag">Cultura</span>
+            </div>
+
+            <div class="card-content">
+                <h3>Conheça Nova York</h3>
+                <hr>
+                <p>Explore museus, arranha-céus e pontos turísticos icônicos na cidade que nunca dorme.</p>
+                <a href="paginas-destino/nova-york.html" class="btn">Ler mais</a>
+            </div>
+        </div>
+
+        <!-- CARD 12 -->
+        <div class="card" data-categoria="praia">
+            <div class="card-image">
+                <img src="../assets/img/cancun.jpg" alt="Cancún">
+                <span class="tag">Praia</span>
+            </div>
+
+            <div class="card-content">
+                <h3>Desfrute de Cancún</h3>
+                <hr>
+                <p>Relaxe em praias paradisíacas de águas cristalinas e aproveite o melhor do Caribe mexicano.</p>
+                <a href="paginas-destino/cancun.html" class="btn">Ler mais</a>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="paginas/destinos.html">Destinos</a>
+                <a href="paginas/sobre.html">Sobre</a>
+                <a href="paginas/contato.html">Contato</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            © 2026 MeusDestinos - Desenvolvido por Breno, Nathalia, Vanessa
+        </div>
+    </footer>
+
+<!-- FILTRO EM JAVASCRIPT -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const botoes = document.querySelectorAll(".filtro");
+    const cards = document.querySelectorAll(".card");
+
+    botoes.forEach(btn => {
+        btn.addEventListener("click", () => {
+
+            botoes.forEach(b => b.classList.remove("ativo"));
+            btn.classList.add("ativo");
+
+            const filtro = btn.getAttribute("data-filtro");
+
+            cards.forEach(card => {
+                const categoria = card.getAttribute("data-categoria");
+
+                if (filtro === "todos" || categoria === filtro) {
+                    card.classList.remove("hidden");
+                } else {
+                    card.classList.add("hidden");
+                }
+            });
+
+        });
+    });
+
+});
+</script>
+
+</body>
+</html>

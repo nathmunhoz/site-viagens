@@ -1,0 +1,352 @@
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+	background-color: #F5F5F5;
+	color: #222;
+}
+
+/* HERO */
+.hero-destino {
+	height: 45vh;
+	background-image:
+		linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+		url("../assets/img/imagemhome.jpg");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: white;
+}
+
+/* IMAGENS DO HERO DOS DESTINOS */
+.hero-paris {
+	background-image:
+		linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+		url("../assets/img/paris.jpg");
+}
+
+.hero-noronha {
+	background-image:
+		linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+		url("../assets/img/noronha.jpg");
+}
+
+.hero-amalfitana {
+	background-image:
+		linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+		url("../assets/img/costaamalfitana.png");
+}
+
+.hero-ilhas-gregas {
+	background-image:
+		linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+		url("../assets/img/grecia-santorini-praia-1-jpg.webp");
+}
+
+.hero-japao {
+	background-image:
+		linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+		url("../assets/img/638814864529335322_cultura-japonesa.jpg");
+}
+
+.hero-africa {
+	background-image:
+		linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+		url("../assets/img/africa.jpg");
+}
+
+.hero-sydney {
+	background-image:
+		linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+		url("../assets/img/sydney.webp");
+}
+
+.hero-machu-picchu {
+	background-image:
+		linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+		url("../assets/img/machu-picchu.jpeg");
+}
+
+.hero-veneza {
+	background-image:
+		linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+		url("../assets/img/veneza.jpg");
+}
+
+.hero-salvador {
+	background-image:
+		linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+		url("../assets/img/salvador.jpg");
+}
+
+.hero-nova-york {
+	background-image:
+		linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+		url("../assets/img/nova york.webp");
+}
+
+.hero-cancun {
+	background-image:
+		linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+		url("../assets/img/cancun.jpg");
+}
+
+.titulo-destino {
+	font-size: 48px;
+	font-weight: 700;
+}
+
+.subtitulo-destino {
+	font-size: 18px;
+	margin-top: 10px;
+	opacity: 0.9;
+}
+
+/* BOTÃO VOLTAR */
+.container-voltar-destino {
+	max-width: 900px;
+	margin: 20px auto;
+	padding: 0 20px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 8px 12px;
+	background: #6C4AB6;
+	color: white;
+	border-radius: 8px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.btn:hover {
+	background: #5A3FA3;
+}
+
+/* TEXTO */
+.texto-destino {
+	max-width: 900px;
+	margin: 30px auto;
+	padding: 25px;
+	background: white;
+	border-radius: 12px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.texto-destino h2 {
+	margin-bottom: 10px;
+	color: #6C4AB6;
+}
+
+.texto-destino h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.texto-destino p {
+	color: #444;
+	line-height: 1.6;
+	margin-bottom: 10px;
+}
+
+.texto-destino ul {
+	padding-left: 20px;
+	margin-top: 10px;
+}
+
+.texto-destino li {
+	margin-bottom: 6px;
+}
+
+/* GUIA RÁPIDO */
+.informacoes-uteis-destino {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.informacoes-uteis-destino h2 {
+    color: #6C4AB6;
+    margin-bottom: 20px;
+}
+
+/* GUIA - GRID */
+.info-card-destino {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+/* GUIA - BLOCOS INFO */
+.info-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    background: #F5F5F5;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #6C4AB6;
+    transition: 0.2s;
+}
+
+/* GUIA - HOVER */
+.info-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* GUIA - ÍCONES */
+.icone {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-top: 2px;
+}
+
+/* TEXTO */
+.info-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* TÍTULO DENTRO DO CARD */
+.info-item strong {
+    display: block;
+    color: #6C4AB6;
+    margin-bottom: 3px;
+}
+
+/* GALERIA */
+.galeria-container-destino {
+	max-width: 900px;
+	margin: 30px auto;
+	padding: 0 20px;
+}
+
+.galeria-container-destino h2 {
+	color: #6C4AB6;
+	margin-bottom: 15px;
+}
+
+.galeria-destino {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+}
+
+.galeria-destino img {
+	width: 100%;
+	height: 220px;
+	object-fit: cover;
+	border-radius: 12px;
+	display: block;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.galeria-destino img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* DETALHE EXTRA */
+hr {
+	border: none;
+	height: 2px;
+	background: #B9A7EA;
+	margin: 10px 0;
+}
+
+/* SEÇÕES GERAIS */
+section {
+	margin-bottom: 30px;
+}
+
+.custos-destino {
+	max-width: 900px;
+	margin: 30px auto;
+	padding: 25px;
+	background: white;
+	border-radius: 12px;
+}
+
+/* TÍTULO */
+.custos-destino h2 {
+	color: #6C4AB6;
+	margin-bottom: 10px;
+}
+
+/* LISTA */
+.custos-destino ul {
+	padding-left: 20px;
+	margin-top: 10px;
+}
+
+.custos-destino li {
+	margin-bottom: 6px;
+}
+
+/* MAPA */
+.mapa-destino {
+	max-width: 900px;
+	margin: 30px auto;
+	padding: 0 20px;
+}
+
+.mapa-destino h2 {
+    color: #6C4AB6;
+	margin-bottom: 10px;
+}
+
+.mapa-destino iframe {
+	width: 100%;
+	height: 300px;
+	border: none;
+	border-radius: 10px;
+}
+
+/* ICONES NOS TITULOS */
+
+h2::before {
+	content: "";
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-right: 8px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+
+.texto-destino h2::before {
+	background-image: url("../assets/img/destino (2).png");
+}
+
+.informacoes-uteis-destino h2::before {
+	background-image: url("../assets/img/guia.png");
+}
+
+.custos-destino h2::before {
+	background-image: url("../assets/img/custo.png");
+}
+
+.mapa-destino h2::before {
+	background-image: url("../assets/img/destino.png");
+}
+
+.galeria-container-destino h2::before {
+	background-image: url("../assets/img/galeria.png");
+}

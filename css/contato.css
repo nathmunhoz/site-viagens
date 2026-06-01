@@ -1,0 +1,317 @@
+*, *::before, *::after {
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ededed;
+}
+
+html {
+    line-height: 1.5;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    word-spacing: 0.05em;
+    margin-inline: auto;
+    scroll-behavior: smooth;
+}
+
+.hero {
+    color: white;
+	background-color: #111827;
+}
+
+.logo img {
+    width: 40px;
+    mix-blend-mode: screen;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.fino {
+    font-weight: 100;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+ul {
+    display: flex;
+    gap:30px;
+    list-style:none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+a:hover {
+    border-bottom: 2px solid white;
+}
+
+
+.texto-hero {
+    height:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    text-align:center;
+  
+}
+
+.texto-hero h1 {
+    font-size:3rem;
+}
+
+.texto-hero h2 {
+     font-size:1.2rem;
+}
+
+
+.contato-hero {
+    text-align:center;
+    margin: 60px auto 40px;
+    max-width: 700px;
+  
+}
+
+.contato-hero h1 {
+   color:  #333;
+    font-size: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contato-hero h2 {
+    color:  rgb(46, 46, 139);
+    font-size:16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+}
+
+
+.contato-hero p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.contato-form{
+    max-width: 600px;
+    margin: 0 auto 80px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.contato-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-form label{
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.contato-form input,
+.contato-form textarea{
+    margin-top: 5px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contato-form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #5A3FA3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contato-form button:hover {
+     background-color: #503990;
+}
+
+.social-section{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 100px 20px 140px;
+    background-color: #f5f5f5;
+}
+
+.mapa-fundo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    opacity: 0.05;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.social-section h1,
+.social-section h2,
+.social-section p,
+.social-cards{
+    position: relative;
+    z-index: 1;
+
+}
+.social-section h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 550;
+    color: #222;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    line-height: 1.1;
+}
+
+.social-text{
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.social-section h2{
+    margin-top: 10px;
+    margin-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #3b246c;
+}
+
+.social-cards{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.social-card{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.social-card:hover{
+    transform: translateY(-8px);
+    
+}
+
+.social-card:hover i{
+  color: #6C4AB6;
+}
+
+.social-card:hover h3{
+    color: #6C4AB6;
+}
+
+.social-card:hover span{
+    color: #3b246c;
+}
+
+.social-card i{
+    font-size: 2.5rem;
+}
+
+.social-card h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #222;
+    margin-bottom: 5px;
+    font-style: bold;
+}
+
+.social-card span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444;
+}
+
+.footer{
+    background:#111827;
+    color:white;
+    margin-top:0;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:2rem;
+    padding:2rem 3rem;
+}
+
+.footer-links,
+.footer-social{
+    display:flex;
+    gap:1.5rem;
+    flex-wrap:wrap;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer a:hover{
+    color:#efbca2;
+}
+
+.footer-copy{
+    text-align:center;
+    padding:1rem;
+    background:#111827;
+    font-size:.95rem;
+}
