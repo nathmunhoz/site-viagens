@@ -53,4 +53,8 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           install: true
+          wait-on: 'https://cd-viagens.azurewebsites.net'
+          wait-on-timeout: 120
           config: baseUrl=https://cd-viagens.azurewebsites.net
+        env:
+          CYPRESS_BASE_URL: https://cd-viagens.azurewebsites.net
