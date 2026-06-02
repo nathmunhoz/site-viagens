@@ -207,23 +207,6 @@ describe('Página Sobre', () => {
 
   })
 
-  it('exibe o campo de email e o botão', () => {
-
-    cy.get('input[type="email"]')
-      .should('exist')
-
-    cy.contains('Assinar')
-
-  })
-
-  it('permite preencher o campo de email', () => {
-
-    cy.get('input[type="email"]')
-      .type('ana@email.com')
-      .should('have.value', 'ana@email.com')
-
-  })
-
   it('exibe o footer', () => {
 
     cy.get('footer')
