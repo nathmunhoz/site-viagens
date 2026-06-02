@@ -144,6 +144,15 @@ ul {
     flex: 1;
 }
 
+.card-item a {
+    background: #6C4AB6;
+    border: none;
+}
+
+.card-item a:hover {
+    background: #5A3FA3;
+}
+
 .email{
     background-color: #1e3a5f;
     color: white;
