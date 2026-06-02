@@ -159,20 +159,6 @@ a:hover {
     border-bottom: 2px solid white;
 }
 
-.email{
-    background-color: #1e3a5f;
-    color: white;
-    padding:4rem 1.5rem;
-    text-align:center;
-}
-
-.email h4{
-    font-size:1.8rem;
-    font-weight:700;
-    margin-bottom:1.5rem;
-    color: white;
-}
-
 .linha{
     display:flex;
     justify-content:center;
